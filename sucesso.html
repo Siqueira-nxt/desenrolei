@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Realizada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sucesso-container">
+        <img src="/static/check-icon.png" class="sucesso-icon" alt="Check" width="120" height="120" style="margin-bottom: 20px;">
+                <h1 class="sucesso-title">Inscrição realizada com sucesso!</h1>
+        <p class="sucesso-subtitle">Você se inscreveu como <strong>{{ tipo_usuario }}</strong>.</p>
+        <p class="sucesso-message">Agradecemos pelo seu interesse. Em breve entraremos em contato com mais informações!</p>
+        <a href="/" class="btn-voltar">Voltar para a página inicial</a>
+    </div>   
+    </div>
+</body>
+</html>
