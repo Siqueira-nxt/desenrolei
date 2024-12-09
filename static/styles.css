@@ -1,0 +1,206 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralizar o logo no topo */
+img.logo {
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 150px; /* Tamanho do logo */
+    margin-bottom: 20px; /* Espaçamento abaixo do logo */
+}
+
+/* Configuração do Body */
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Fonte moderna */
+    background-color: white; /* Cor de fundo clara */
+    color: #333; /* Texto escuro para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Estilo dos campos de input */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupo de formulários */
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #0071e3; /* Cor do foco */
+}
+
+/* Estilo para as opções de radio */
+.tipo-usuario {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.tipo-usuario label {
+    font-size: 18px; /* Tamanho maior para o título */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px; /* Maior espaço abaixo do título */
+    display: inline-block;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center; /* Garante que a bolinha e o texto fiquem alinhados verticalmente */
+    margin-bottom: 15px;
+}
+
+/* Ajustes para o input radio */
+input[type="radio"] {
+    margin-right: 10px; /* Espaçamento entre a bolinha e o texto */
+    cursor: pointer; /* Aparece como um ponteiro quando o usuário passa o mouse sobre a bolinha */
+    width: 18px; /* Ajuste do tamanho da bolinha */
+    height: 18px; /* Ajuste do tamanho da bolinha */
+    vertical-align: middle; /* Alinha a bolinha com o texto */
+}
+
+
+/* Estilo do botão */
+button {
+    padding: 15px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+
+
+/* Container principal */
+.sucesso-container {
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal */
+.sucesso-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo */
+.sucesso-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Mensagem de agradecimento */
+.sucesso-message {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Estilo do botão de voltar */
+.btn-voltar {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0071e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #005bb5;
+}
